@@ -1,15 +1,7 @@
 'use strict';
-/*
-console.log(document.querySelector('.message').textContent); //getting the context of element
-document.querySelector('.message').textContent = 'Correct Number!';
 
-//manipulating the score and number
-document.querySelector('.number').textContent  ='15';
-document.querySelector('.score').textContent = '25';
 
-document.querySelector('.guess').value = 23;
-console.log(document.querySelector('.guess').value);
-*/
+
 
 // define a secret number
 let SecretNumber =Math.trunc(Math.random() *20 +1);
@@ -18,7 +10,7 @@ let Score =20;
 let HighScore = 0; 
 
 const displayMessage = function(message){
-    document.querySelector('.meesage').textContent = message;
+    document.querySelector('.message').textContent = message;
 }
 //below line to show the secret number
 
@@ -90,7 +82,7 @@ document.querySelector('.check').addEventListener('click', function(){
 
 document.querySelector('.again').addEventListener('click',function(){
     Score = 20;
-    SecretNumber =Math.trunc(Math.random() *20 +1);
+    SecretNumber =Math.trunc(Math.random() * 20 + 1);
 
     // document.querySelector('.message').textContent ='Start Guessing...';
     displayMessage('Start guessing...')
