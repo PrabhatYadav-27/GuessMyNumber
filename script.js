@@ -1,8 +1,5 @@
 'use strict';
 
-
-
-
 // define a secret number
 let SecretNumber =Math.trunc(Math.random() *20 +1);
 //keep the score 
